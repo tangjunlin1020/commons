@@ -222,6 +222,16 @@ public class WavMergeUtil {
 		File[] filee = {new File("D:/wav/A.wav"),new File("D:/wav/B.wav")};
 		mergeWav(filee,"D:/merge.wav");
 		FileOutputStream out =new FileOutputStream(new File("D:/ss.wav"));
+
 		out.write(mergeWav(filee));
+
+		out.write(mergeWav(files));
+		System.out.printf("sssssssssssss");
+		System.out.printf("sssssssssssss");
+		System.out.printf("sssssssssssss");
+		System.out.printf("sssssssssssss");
+		System.out.printf("sssssssssssss");
+		System.out.printf("swwwwwwwwwwww");
+
 	}
 }
