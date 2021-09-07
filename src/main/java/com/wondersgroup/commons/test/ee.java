@@ -10,5 +10,7 @@ package com.wondersgroup.commons.test;
 public class ee {
     public static void main(String[] args) {
         System.out.printf("1");
+        System.out.printf("1");
+        System.out.printf("ssssssssss");
     }
 }
