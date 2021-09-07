@@ -12,5 +12,8 @@ public class ee {
         System.out.printf("1");
         System.out.printf("1");
         System.out.printf("ssssssssss");
+        System.out.printf("ssssssssss");
+        System.out.printf("ssssssssss");
+        System.out.printf("ssssssssss");
     }
 }
