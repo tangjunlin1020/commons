@@ -219,19 +219,9 @@ public class WavMergeUtil {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		File[] filee = {new File("D:/wav/A.wav"),new File("D:/wav/B.wav")};
-		mergeWav(filee,"D:/merge.wav");
+		File[] files = {new File("D:/wav/A.wav"),new File("D:/wav/B.wav")};
+		mergeWav(files,"D:/merge.wav");
 		FileOutputStream out =new FileOutputStream(new File("D:/ss.wav"));
-
-		out.write(mergeWav(filee));
-
 		out.write(mergeWav(files));
-		System.out.printf("sssssssssssss");
-		System.out.printf("sssssssssssss");
-		System.out.printf("sssssssssssss");
-		System.out.printf("sssssssssssss");
-		System.out.printf("sssssssssssss");
-		System.out.printf("swwwwwwwwwwww");
-
 	}
 }
