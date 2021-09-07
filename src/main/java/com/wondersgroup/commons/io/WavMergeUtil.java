@@ -224,5 +224,7 @@ public class WavMergeUtil {
 		FileOutputStream out =new FileOutputStream(new File("D:/ss.wav"));
 		out.write(mergeWav(files));
 		System.out.printf("sssssssssssss");
+		System.out.printf("sssssssssssss");
+		System.out.printf("sssssssssssss");
 	}
 }
