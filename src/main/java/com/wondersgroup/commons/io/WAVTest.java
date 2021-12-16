@@ -278,9 +278,9 @@ public class WAVTest {
     }
 
     public static void main(String[] args) throws IOException {
-        String filepath1 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\0.wav";// 源文件1.wav
+        String filepath1 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\A.wav";// 源文件1.wav
 
-        String filepath2 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\N.wav";// 源文件2.wav
+        String filepath2 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\B.wav";// 源文件2.wav
 
         String filepath3 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\test.wav";// 合成文件addwav.wav
 

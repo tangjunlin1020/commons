@@ -99,32 +99,34 @@ public class WavCompose{
     }
 
     public static void main(String[] args) throws IOException {
-        String out = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\test2.wav";
-        String filepath1 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\0.wav";
-        String filepath2 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\5.wav";
-        String filepath3 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\2.wav";
-        String filepath4 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\3.wav";
-        String filepath5 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\7.wav";
-//        String filepath1 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\U.wav";
-//        String filepath2 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\T.wav";
-//        String filepath3 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\Z.wav";
-//        String filepath4 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\AA.wav";
-//        String filepath5 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\V.wav";
-        String filepath6 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\letter.wav";
-        String filepath7 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\number.wav";
+        String out = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\MP3\\test1.mp3";
+
+//        String filepath1 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\MP3\\letter.mp3";
+        String filepath1 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\MP3\\number.mp3";
+//        String filepath2 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\MP3\\5.mp3";
+        String filepath2 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\test\\3.mp3";
+        String filepath3 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\test\\b.mp3";
+//        String filepath3 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\MP3\\Z.mp3";
+//        String filepath4 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\MP3\\3.mp3";
+        String filepath4 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\test\\2.mp3";
+        String filepath5 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\test\\b.mp3";
+//        String filepath5 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\MP3\\V.mp3";
+//        String filepath6 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\MP3\\0.mp3";
+        String filepath6 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\test\\a.mp3";
+//        String filepath7 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\MP3\\4.mp3";
+        String filepath7 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\test\\1.mp3";
 
         WavCompose wav = new WavCompose();
         wav.addWav(out, filepath1, filepath2, filepath3, filepath4, filepath5,filepath6,filepath7);
         System.out.println("合成完毕");
 
-        String out2 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\test3.wav";
-        String filepath11 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\A.wav";
-        String filepath22 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\letter.wav";
-        wav.addWav(out2, filepath11, filepath22);
-        String out3 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\test4.mp3";
-        String filepath14 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\A.mp3";
-        String filepath24 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\letter.mp3";
-        wav.addWav(out3, filepath14, filepath24);
-        System.out.println("2合成完毕");
+//        String out2 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\test3.wav";
+//        String filepath11 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\A.wav";
+//        String filepath22 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\letter.wav";
+//        wav.addWav(out2, filepath11, filepath22);
+//        String out3 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\test4.mp3";
+//        String filepath14 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\A.mp3";
+//        String filepath24 = "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\letter.mp3";
+//        wav.addWav(out3, filepath14, filepath24);
     }
 }

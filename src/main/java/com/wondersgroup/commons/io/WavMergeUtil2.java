@@ -159,22 +159,22 @@ public class WavMergeUtil2 {
 
     public static void main(String[] args) throws IOException {
         File[] files = {
-                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\letter.wav"),
-                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\number.wav"),
-                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\0.wav"),
-                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\5.wav"),
-                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\2.wav"),
-                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\7.wav"),
-                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\AA.wav"),
+//                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\letter.wav"),
+//                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\number.wav"),
+                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav - new\\0.wav"),
+                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav - new\\5.wav"),
+                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav - new\\2.wav"),
+                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav - new\\7.wav"),
+                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav - new\\A.wav"),
 
-                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\N.wav"),
-                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\N.wav"),
-                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\N.wav"),
-                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\N.wav"),
-                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\N.wav"),
-                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\N.wav"),
+                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav - new\\N.wav"),
+                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav - new\\N.wav"),
+                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav - new\\N.wav"),
+                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav - new\\N.wav"),
+                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav - new\\N.wav"),
+                new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav - new\\N.wav"),
         };
-        mergeWav(files, "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\merge.wav");
+        mergeWav(files, "E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav - new\\merge.wav");
 //		FileOutputStream out =new FileOutputStream(new File("E:\\ItemWorkspace\\IDEA_workspace\\commons\\src\\main\\resources\\wav\\ssd.wav"));
 //		out.write(mergeWav(files));
         System.out.printf("执行结束1");
