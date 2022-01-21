@@ -4,7 +4,14 @@ import it.sauronsoftware.jave.MultimediaInfo;
 
 import java.io.File;
 
-/** @Author TJL @Date 2021/9/30 14:46 @Description: 音频工具类 */
+/**
+ * 音频工具类
+ * @author tangjunlin
+ * @date: 2022/1/20
+ *
+*/
+
+
 public class AudioWavUtils  {
 
     public static Long getDuration(File source) {
