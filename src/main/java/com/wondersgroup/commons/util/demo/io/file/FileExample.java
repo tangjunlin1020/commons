@@ -1,12 +1,18 @@
-package com.wondersgroup.commons.io.file;
+package com.wondersgroup.commons.util.demo.io.file;
 
 
 import java.io.*;
 
 public class FileExample {
     public static void main(String[] args) {
+        //这里在项目下面新建了一个data文件夹，里面放置了1.txt文件
+        File f = new File("data/1.txt");//data前不要加/
+        //打印出相对路径
+        System.out.println(f.getAbsolutePath());
+        //结果是： E:\ItemWorkspace\IDEA_workspace\commons\data\1.txt　
+
         createFile3();//先创建文件夹
-             createFile2();//再创建文件
+        createFile2();//再创建文件
         createFile();//文件处理等
     }
 
@@ -14,7 +20,7 @@ public class FileExample {
      * 文件处理示例
      */
     public static void createFile() {
-        File f = new File("D:/垃圾桶/file/test.txt");
+        File f = new File("D:/垃圾桶/file/test.txt");//或者/写成\\也可以
         try {
             f.createNewFile();  //当且仅当不存在具有此抽象路径名指定名称的文件时，不可分地创建一个新的空文件。  例如有D:/垃圾桶目录但是没有D:/垃圾桶/files。则File f=new File("D:/垃圾桶/files/create.txt")创建失败
             System.out.println("该分区大小" + f.getTotalSpace() / (1024 * 1024 * 1024) + "G"); //返回由此抽象路径名表示的文件或目录的名称。
