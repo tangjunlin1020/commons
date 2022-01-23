@@ -1,4 +1,4 @@
-package com.wondersgroup.commons.io.Excel;
+package com.wondersgroup.commons.util.demo.io.Excel;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
@@ -26,7 +26,7 @@ public class Excel {
         //创建工作簿 （使用了多态特性）    HSSFWorkbook wb = new HSSFWorkbook();
         Workbook wb = new HSSFWorkbook();
         //使用工作簿的write()方法向文件输出工作簿
-        FileOutputStream out = new FileOutputStream("D:\\1.xls");
+        FileOutputStream out = new FileOutputStream("src/main/resources/excel/1.xls");
         wb.write(out);
         //流的关闭
         out.close();
@@ -45,7 +45,7 @@ public class Excel {
             wb.createSheet("sheet1");
             wb.createSheet("sheet2");
             //创建流并将wb输出
-            FileOutputStream out = new FileOutputStream("D:\\2.xls");
+            FileOutputStream out = new FileOutputStream("src/main/resources/excel/2.xls");
             wb.write(out);
             //流的关闭
             out.close();
@@ -69,7 +69,7 @@ public class Excel {
         //给单元格赋值
         cell.setCellValue("测试单元格内容");
         //创建流并将wb输出
-        FileOutputStream out = new FileOutputStream("D:\\3.xls");
+        FileOutputStream out = new FileOutputStream("src/main/resources/excel/3.xls");
         wb.write(out);
         //流的关闭
         out.close();
@@ -97,7 +97,7 @@ public class Excel {
         row.createCell(2).setCellValue(false);  //第三列赋值boolean型
         row.createCell(3).setCellValue("测试单元格内容11");  //
         //创建流并将wb输出
-        FileOutputStream out = new FileOutputStream("D:\\4.xls");
+        FileOutputStream out = new FileOutputStream("src/main/resources/excel/4.xls");
         wb.write(out);
         //流的关闭
         out.close();
