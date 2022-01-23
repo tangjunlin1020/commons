@@ -20,7 +20,8 @@ public class FileExample {
      * 文件处理示例
      */
     public static void createFile() {
-        File f = new File("D:/垃圾桶/file/test.txt");//或者/写成\\也可以
+//        File f = new File("D:/垃圾桶/file/test.txt");//或者/写成\\也可以
+        File f = new File("src\\main\\resources\\demo\\file\\test.txt");//或者/写成\\也可以
         try {
             f.createNewFile();  //当且仅当不存在具有此抽象路径名指定名称的文件时，不可分地创建一个新的空文件。  例如有D:/垃圾桶目录但是没有D:/垃圾桶/files。则File f=new File("D:/垃圾桶/files/create.txt")创建失败
             System.out.println("该分区大小" + f.getTotalSpace() / (1024 * 1024 * 1024) + "G"); //返回由此抽象路径名表示的文件或目录的名称。
@@ -38,7 +39,7 @@ public class FileExample {
      * 判断文件是否存在，不存在则创建
      */
     private static void createFile2() {
-        File file = new File("D:\\垃圾桶\\file\\test2.txt");
+        File file = new File("src\\main\\resources\\demo\\file\\test2.txt");
         if (!file.exists()) {
             try {
                 file.createNewFile();
@@ -57,7 +58,7 @@ public class FileExample {
     }
 
     private static void createFile3() {
-        File folder = new File("D:\\垃圾桶\\file");
+        File folder = new File("src\\main\\resources\\demo\\file");
 
         if (!folder.exists() && !folder.isDirectory()) {
             folder.mkdirs();

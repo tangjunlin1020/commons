@@ -18,11 +18,11 @@ public class AudioChangeType {
     public static void main(String[] args) throws Exception {
         long oldTime = System.currentTimeMillis();
 
-        changeWavToMp3("src\\main\\resources\\audio\\wavChangeMp3\\0.wav", "src\\main\\resources\\audio\\wavChangeMp3\\00.mp3");//单个WAV转mp3
-        changeMp3ToWav("src\\main\\resources\\audio\\wavChangeMp3\\0.mp3", "src\\main\\resources\\audio\\wavChangeMp3\\00.wav");//单个mp3转WAV
+        changeWavToMp3("src\\main\\resources\\demo\\audio\\wavChangeMp3\\0.wav", "src\\main\\resources\\demo\\audio\\wavChangeMp3\\00.mp3");//单个WAV转mp3
+        changeMp3ToWav("src\\main\\resources\\demo\\audio\\wavChangeMp3\\0.mp3", "src\\main\\resources\\demo\\audio\\wavChangeMp3\\00.wav");//单个mp3转WAV
         changeAllWavToMp3();//目录下所有的WAV转mp3
 
-        System.out.println(getDuration(new File("src\\main\\resources\\audio\\wavChangeMp3\\0.wav")));//获取音频大小
+        System.out.println(getDuration(new File("src\\main\\resources\\demo\\audio\\wavChangeMp3\\0.wav")));//获取音频大小
 
         System.out.println("消耗：" + (System.currentTimeMillis() - oldTime) + "ms");
     }
@@ -38,7 +38,7 @@ public class AudioChangeType {
     }
 
     private static void changeAllWavToMp3() throws Exception {
-        String localPaths = "src\\main\\resources\\audio\\wavChangeMp3\\";
+        String localPaths = "src\\main\\resources\\demo\\audio\\wavChangeMp3\\";
         String[] list = new File(localPaths).list();
         for (int i = 0; i < list.length; i++) {
             String localPath = localPaths + list[i];

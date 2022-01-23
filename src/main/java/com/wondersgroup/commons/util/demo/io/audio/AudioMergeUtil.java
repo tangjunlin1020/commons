@@ -12,20 +12,20 @@ import java.nio.channels.FileChannel;
  */
 public class AudioMergeUtil {
     public static void main(String[] args) throws Exception {
-        String outmp3 = "src\\main\\resources\\audio\\wavChangeMp3\\mergeMp3.mp3";
-        String outwav = "src\\main\\resources\\audio\\wavChangeMp3\\mergeWav.wav";//需要合并的文件最好格式要一致，否则就会出现变声的情况
+        String outmp3 = "src\\main\\resources\\demo\\audio\\wavChangeMp3\\mergeMp3.mp3";
+        String outwav = "src\\main\\resources\\demo\\audio\\wavChangeMp3\\mergeWav.wav";//需要合并的文件最好格式要一致，否则就会出现变声的情况
 
-        String filepath1 = "src\\main\\resources\\audio\\wavChangeMp3\\letter.mp3";
-        String filepath2 = "src\\main\\resources\\audio\\wavChangeMp3\\a.mp3";
-        String filepath3 = "src\\main\\resources\\audio\\wavChangeMp3\\3.mp3";
-        String filepath4 = "src\\main\\resources\\audio\\wavChangeMp3\\2.mp3";
-        String filepath5 = "src\\main\\resources\\audio\\wavChangeMp3\\V.mp3";
+        String filepath1 = "src\\main\\resources\\demo\\audio\\wavChangeMp3\\letter.mp3";
+        String filepath2 = "src\\main\\resources\\demo\\audio\\wavChangeMp3\\a.mp3";
+        String filepath3 = "src\\main\\resources\\demo\\audio\\wavChangeMp3\\3.mp3";
+        String filepath4 = "src\\main\\resources\\demo\\audio\\wavChangeMp3\\2.mp3";
+        String filepath5 = "src\\main\\resources\\demo\\audio\\wavChangeMp3\\V.mp3";
 
-        String filepath11 = "src\\main\\resources\\audio\\wavChangeMp3\\letter.wav";
-        String filepath12 = "src\\main\\resources\\audio\\wavChangeMp3\\a.wav";
-        String filepath13 = "src\\main\\resources\\audio\\wavChangeMp3\\3.wav";
-        String filepath14 = "src\\main\\resources\\audio\\wavChangeMp3\\2.wav";
-        String filepath15 = "src\\main\\resources\\audio\\wavChangeMp3\\V.wav";
+        String filepath11 = "src\\main\\resources\\demo\\audio\\wavChangeMp3\\letter.wav";
+        String filepath12 = "src\\main\\resources\\demo\\audio\\wavChangeMp3\\a.wav";
+        String filepath13 = "src\\main\\resources\\demo\\audio\\wavChangeMp3\\3.wav";
+        String filepath14 = "src\\main\\resources\\demo\\audio\\wavChangeMp3\\2.wav";
+        String filepath15 = "src\\main\\resources\\demo\\audio\\wavChangeMp3\\V.wav";
         AudioMergeUtil.audioMerge("mp3", outmp3, filepath1, filepath2, filepath3, filepath4, filepath5);
         AudioMergeUtil.audioMerge("wav", outwav, filepath11, filepath12, filepath13, filepath14, filepath15);
         System.out.println("合成完毕");
