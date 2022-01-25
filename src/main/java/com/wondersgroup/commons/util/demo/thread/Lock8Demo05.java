@@ -1,4 +1,4 @@
-package com.wondersgroup.commons.thread;
+package com.wondersgroup.commons.util.demo.thread;
 
 import java.util.concurrent.TimeUnit;
 
@@ -21,7 +21,7 @@ class Phone
 
 
 /**
- * @auther zzyy
+ * @auther tangjunlin
  *  8 lock
  *1 标准访问，请问先打印邮件还是短信
  *2 暂停4秒钟在邮件方法，请问先打印邮件还是短信
