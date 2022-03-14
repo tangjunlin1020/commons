@@ -4,14 +4,16 @@ import java.util.concurrent.TimeUnit;
 
 class Phone
 {
-    public static synchronized void sendEmail()throws Exception
+    public  synchronized void sendEmail()throws Exception
     {
         TimeUnit.SECONDS.sleep(4);
-        System.out.println("*****sendEmail");
+//        System.out.println("*****sendEmail");
+        System.out.println("*****1111");
     }
     public synchronized void sendSMS()throws Exception
     {
-        System.out.println("*****sendSMS");
+//        System.out.println("*****sendSMS");
+        System.out.println("*****22222");
     }
     public void sayHello()throws Exception
     {
@@ -54,14 +56,13 @@ public class Lock8Demo05
         new Thread(() -> {
             try
             {
-                //phone.sendSMS();
-                //phone.sayHello();
-                phone2.sendSMS();
+                phone.sendSMS();
+//                phone.sayHello();
+//                phone2.sendSMS();
             } catch (Exception e) {
                 e.printStackTrace();
             }
         },"B").start();
-
     }
 }
 

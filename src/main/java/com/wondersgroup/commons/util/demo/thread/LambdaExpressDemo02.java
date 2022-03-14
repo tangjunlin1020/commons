@@ -2,17 +2,17 @@ package com.wondersgroup.commons.util.demo.thread;
 
 @FunctionalInterface
 //jdk8以后有的，如果不写默认会加，隐式的
-interface Foo {
-    //public void sayHello();
-    public int add(int x, int y);
+abstract interface Foo {//abstract可以省略。默认会加上
+//    public void sayHello();
+    public abstract int add(int x, int y);//abstract可以省略。默认会加上
 
-    default int mul(int x, int y) {
+    default  int mul(int x, int y) {
         return x * y;
-    }//default修饰的方法有多个
+    }//default修饰的方法有多个,jdk8以后才有。目的是
 
     public static int div(int x, int y) {//static定义的修饰的方法有多个
         return x / y;
-    }
+    }//static修饰的方法有多个,jdk8以后才有
 
 }
 
@@ -42,6 +42,17 @@ public class LambdaExpressDemo02 {
             }
         };
         foo.sayHello();*/
+
+        Foo ss=new Foo() {
+            @Override
+            public int add(int x, int y) {
+                return 0;
+            }
+        };
+
+        Foo fp=(int x, int y)->{
+            return 0;
+        };
 
         Foo foo = (int x, int y) -> {
             System.out.println("come in add method");
