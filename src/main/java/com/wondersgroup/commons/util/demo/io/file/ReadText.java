@@ -84,7 +84,6 @@ public class ReadText {
 
     public static void main(String argv[]) {
         long startTime = System.currentTimeMillis();
-//        String filePath = "D:\\垃圾桶\\localhost_access_log.2022-05-06.txt";
         String filePath = "D:\\垃圾桶\\localhost_access_log.2022-05-09.txt";
         readTxtFile(filePath);
         long endTime = System.currentTimeMillis();
