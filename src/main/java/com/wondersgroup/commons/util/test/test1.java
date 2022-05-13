@@ -1,7 +1,5 @@
 package com.wondersgroup.commons.util.test;
 
-import java.util.Base64;
-
 /**
  * TODO
  *
@@ -15,7 +13,8 @@ public class test1 {
         new test1().ss();
 
     }
-    private  void ss(){
+
+    private void ss() {
         System.out.println(Thread.currentThread().getName());
     }
 }
