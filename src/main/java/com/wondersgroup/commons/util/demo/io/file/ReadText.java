@@ -79,7 +79,6 @@ public class ReadText {
             System.out.println("读取文件内容出错");
             e.printStackTrace();
         } finally {
-//            read.close();
         }
     }
 
