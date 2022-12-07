@@ -1,4 +1,4 @@
-package com.wondersgroup.commons.util.demo.io.java8New;
+package com.wondersgroup.commons.util.demo.other.java8New;
 
 /**
  * Lambda 表达式，也可称为闭包，它是推动 Java 8 发布的最重要新特性。

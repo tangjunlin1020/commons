@@ -1,8 +1,7 @@
-package com.wondersgroup.commons.util.demo.io.java8New;
+package com.wondersgroup.commons.util.demo.other.java8New;
 
 import org.junit.Test;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
