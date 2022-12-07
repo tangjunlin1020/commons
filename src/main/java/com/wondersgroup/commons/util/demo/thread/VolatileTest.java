@@ -68,9 +68,16 @@ public class VolatileTest {
     }
 
     public static void main(String args[]) throws InterruptedException {
-//        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 100; i++) {
             VolatileTest volaitil = new VolatileTest();
             volaitil.test();
-//        }
+        }
+
+
+
+
+
+
+
     }
 }
