@@ -43,7 +43,22 @@ public class LambdaDemo {
      */
 
     public static void main(String[] args) {
-        LambdaDemo lambdaDemo = new LambdaDemo();
+//        LambdaDemo lambdaDemo = new LambdaDemo();
+//下面是使用lambas来实现Runable接口的实例
+        new Thread(
+                new Runnable() {
+                    @Override
+                    public void run() {
+                        System.out.println("hell1");
+                    }
+                }
+        ).start();
+
+        new Thread(
+                ()->System.out.println(123)
+        ).start();
+
+
 
 
     }
